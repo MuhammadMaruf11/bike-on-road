@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1294px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.road-wrap {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: auto auto;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+
+#cloud-1 {
+    position: absolute;
+    right: 0;
+    top: 105px;
+    transition: all .3s;
+    animation: right-to-left 50s linear infinite;
+}
+
+
+#cloud-1 img {
+    width: 395px;
+}
+
+#cloud-2 {
+    position: absolute;
+    top: 50px;
+    left: 340px;
+    transition: all .3s;
+    animation: right-to-left-2 25s linear infinite;
+}
+
+#cloud-2 img {
+    width: 255px;
+    transform: rotateY(180deg);
+}
+
+#cloud-3 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: all .3s;
+    animation: left-to-right 30s linear infinite;
+}
+
+#cloud-3 img {
+    width: 255px;
+}
+
+#bike {
+    transition: .3s;
+    z-index: 999;
+}
+
+#bike img {
+    width: 150px;
+}
+
+
+
+.road-step-wrap .step-1 {
+    text-align: center;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: top-to-bottom .5s  infinite ;
+}
+
+.road-step-wrap .step-2 {
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+    left: 50.3%;
+    transform: translateX(-50%);
+    animation: top-to-bottom .5s  infinite ;
+}
+
+.road-step-wrap .step-3 {
+    text-align: center;
+    position: absolute;
+    bottom: 39%;
+    left: 50.5%;
+    transform: translateX(-50%);
+    animation: top-to-bottom .5s  infinite ;
+}
+
+.road-step-wrap .step-4 {
+    text-align: center;
+    position: absolute;
+    bottom: 49%;
+    left: 50.8%;
+    transform: translateX(-50%);
+    animation: top-to-bottom .5s  infinite ;
+}
+
+.road-step-wrap .step-1 img {
+    width: 80%;
+}
+
+.road-step-wrap .step-2 img {
+    width: 80%;
+}
+
+.road-step-wrap .step-3 img {
+    width: 80%;
+}
+
+.road-step-wrap .step-4 img {
+    width: 80%;
+}
+
+/* 
+#cloud-4 {
+    position: absolute;
+    top: 250px;
+    left: 315px;
+    z-index: -1;
+    animation: left-to-right 30s linear infinite;
+}
+
+#cloud-4 img {
+    width: 175px;
+} */
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(120%);
+    }
+
+    20% {
+        transform: translateX(30%);
+    }
+
+    40% {
+        transform: translateX(-60%);
+    }
+
+    60% {
+        transform: translateX(-150%);
+    }
+
+    80% {
+        transform: translateX(-240%);
+    }
+
+    100% {
+        transform: translateX(-330%);
+    }
+}
+
+@keyframes right-to-left-2 {
+    0% {
+        transform: translateX(450%);
+    }
+
+    20% {
+        transform: translateX(300%);
+    }
+
+    40% {
+        transform: translateX(150%);
+    }
+
+    60% {
+        transform: translateX(0%);
+    }
+
+    80% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(150%);
+    }
+
+    60% {
+        transform: translateX(300%);
+    }
+
+    80% {
+        transform: translateX(450%);
+    }
+
+    100% {
+        transform: translateX(600%);
+    }
+}
+
+@keyframes top-to-bottom {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(50%);
+    }
+}
