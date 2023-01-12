@@ -1,6 +1,10 @@
 # bike-on-road
 raw HTML CSS JavaScript
 
+<p align="center">
+  <img src="assets/main-bg.jpg" title="main-bg">
+</p>
+
 # This is only for web 
 Only 1920*1080 resolution can display...
 
